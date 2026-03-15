@@ -1,7 +1,16 @@
-body{
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+section{
+    min-height: 100vh;
+    padding: 60px;
+}
+#Home{
     background-image: url("background.jpeg");
     background-size: cover;
-    opacity: 0.9;
+    background-position: center;
 }
 
 
@@ -9,4 +18,44 @@ h2{
     text-align: center;
     font-family: Arial;
     
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent ;
+    background-color: rgb(85, 82, 82);
+    padding: 15px 50px;;
+}
+
+.logo{
+    color:rgb(175, 179, 228);
+    font-size:28px;
+    font-family: Arial;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:18px;
+}
+
+nav ul li a:hover{
+    color:orange;
+}
+section h1{
+    font-size: 70px;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+    margin-top: 128px;
 }
