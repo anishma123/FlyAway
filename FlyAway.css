@@ -23,9 +23,7 @@ nav{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent ;
-    background-color: rgb(85, 82, 82);
-    padding: 15px 50px;;
+background-color: rgba(0, 0, 0, 0.5);    padding: 15px 50px;;
 }
 
 .logo{
@@ -59,3 +57,5 @@ section h1{
     text-align: center;
     margin-top: 128px;
 }
+
+
