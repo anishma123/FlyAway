@@ -5,13 +5,16 @@
 }
 
 section{
+    padding: 60px 20px;
     min-height: 100vh;
+
 }
 
 #HomePage{
     background-image: url("background.jpeg");
     background-size: cover;
     background-position: center;
+
 
 }
 
@@ -74,7 +77,12 @@ section h1{
 }
 h2{
     text-align: center;
-    font-family: bold;
+    font-weight: bold;
     text-shadow: 2px 3px 4px hsl(214, 89%, 50%);
     
+}
+section img{
+    width: 50%;
+    height: auto;
+    display: block;
 }
