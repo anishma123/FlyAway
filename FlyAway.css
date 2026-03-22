@@ -86,3 +86,7 @@ section img{
     height: auto;
     display: block;
 }
+#paragraph{
+    text-transform: capitalize;
+    font-weight: bolder;
+}
