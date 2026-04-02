@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
     <link rel="stylesheet" href="FlyAway.css">
     <title>FlyAway Trip</title>
 </head>
@@ -28,12 +29,32 @@
     <section id="Contact">
         <div class="container">
          <section class="left">
-         <img src="./cover.jpeg">
+         <img src="./Contact.jpeg">
          </section>
-         <section class="right">
-            
+<section class="right">
+    <h2>Contact Us</h2>
 
-         </section>
+    <form class="contact-form">
+        <input type="text" placeholder="Enter your Full Name" required>
+        <input type="email" placeholder="Enter your Email" required>
+        <input type="number" placeholder="Enter your Phone Number" required>
+
+        <select required>
+            <option value="s">Select Destination</option>
+            <option>Paris</option>
+            <option>Dubai</option>
+            <option>Canada</option>
+            <option>Nepal</option>
+            <option>Maldives</option>
+        </select>
+
+        <input type="date" required>
+
+        <textarea placeholder="Write your message..." rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
          
           </div>
         </section>
@@ -109,11 +130,51 @@
                 <h3>maldives</h3>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
+
+            <div class="card">
+                <img src="./itly.jpeg">
+                <h3>Italy</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+
+
+            <div class="card">
+                <img src="./singapore.jpeg">
+                <h3>signapore</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+
+
         </div>
      </section>
 
-    <section id="About">About Us</section>
-    
+<section id="About">
+    <div class="about-container">
+        <h2>About Us</h2>
+        <p>
+            Welcome to <b>FlyAway</b>, your trusted travel partner for exploring the most beautiful destinations around the world.
+            We help travelers plan unforgettable trips with affordable packages, comfortable bookings, and exciting adventures.
+        </p>
+
+        <p>
+            Our mission is to make traveling easy, safe, and enjoyable for everyone. Whether you want a peaceful holiday,
+            a romantic getaway, or an adventurous tour, FlyAway is here to guide you.
+        </p>
+
+        <p>
+            With our best travel deals and friendly service, we aim to create memories that last forever.
+            Start your journey with FlyAway and explore the beauty of the world.
+        </p>
+
+        <div class="social-icons">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </div>
+</section>    
 
 </body>
 </html> 

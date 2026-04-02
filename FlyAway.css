@@ -1,163 +1,407 @@
-/* *{ 
-    margin:0;
-     padding:0;
-      box-sizing: border-box; 
-    } 
-section{
-     padding: 60px 20px;
-      min-height: 100vh; 
-    } 
-#Home{
-     background-image: url("background.jpeg"); 
-    background-size: cover;
-     background-position: center;
-      padding-top: 80px;
-     } 
-     nav{ 
-        display:flex;
-         justify-content: space-between; 
-         align-items: center; 
-         background-color: rgba(0, 0, 0, 0.5); 
-         padding: 15px 50px;
-         } 
-         .logo{
-             color:rgb(175, 179, 228);
-              font-size:28px;
-             } 
-             nav ul{
-                 list-style:none; 
-                 display:flex; 
-                } 
-                nav ul li{ 
-                    margin-left:25px;
-                 } 
-                 nav ul li a{ 
-                    text-decoration:none; 
-                    color:white;
-                 } nav ul li a:hover{ 
-                    color:orange;
-                 } section h1{ 
-                    font-size: 100px; 
-                    color: white; 
-                    text-align: center;
-                     margin-top: 128px; } 
-                     
-                     
-                     .card-container{ 
-                        display: grid;
-                         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; } .card{ background: white; border-radius: 10px; overflow: hidden; text-align: center; padding: 10px; } .card img{ width: 100%; height: 300px; object-fit: cover; } h2{ text-align: center; font-weight: bold; text-shadow: 2px 3px 4px hsl(214, 89%, 50%); } section img{ width: 50%; height: 40%; display: block; } #paragraph{ text-transform: capitalize; font-weight: bold; } .nav{ top: 0; position: fixed; width: 100%; } #Contact img{ height:800px; width: 700px; } .container{ display: flex; gap: 20px; } .left .right{ flex: 1; padding: 20px; border: 1px solid black; */
-
-                         *{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-section{
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+section {
     padding: 60px 20px;
     min-height: 100vh;
 }
 
-#Home{
-    padding: 0;
+
+#Home {
+    padding-top: 120px;
     background-image: url("background.jpeg");
     background-size: cover;
     background-position: center;
+    min-height: 100vh;
+    position: relative;
+
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
 }
 
-nav{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 15px 20px;
-}
-
-.logo{
-    color:rgb(175, 179, 228);
-    font-size:28px;
-}
-
-nav ul{
-    list-style:none;
-    display:flex;
-}
-
-nav ul li{
-    margin-left:25px;
-}
-
-nav ul li a{
-    text-decoration:none;
-    color:white;
-}
-
-nav ul li a:hover{
-    color:orange;
-}
-
-section h1{
+#Home h1 {
     font-size: 100px;
     color: white;
     text-align: center;
-    margin-top: 128px;
+    margin: 0 auto;            
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+    max-width: 900px;
+    line-height: 1.2;
 }
-
-.card-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.card{
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    padding: 10px;
-}
-
-.card img{
+nav.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
-    height: 300px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 12px 0;
+    z-index: 1000;
+}
+
+nav.nav .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 60px; 
+}s
+.logo {
+    color: rgb(175, 179, 228);
+    font-size: 32px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+nav.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 15px 5%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    box-shadow: 0 4px 25px rgba(0,0,0,0.3);
+    backdrop-filter: blur(15px);
+}
+
+nav.nav .logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(175, 179, 228);
+    flex-shrink: 0;
+}
+
+nav.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+nav.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 25px;
+}
+
+nav.nav ul li a:hover {
+    color: orange;
+    background: rgba(255, 165, 0, 0.1);
+}
+
+@media (max-width: 992px) {
+    nav.nav {
+        padding: 15px 4%;
+    }
+    
+    nav.nav ul {
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav.nav {
+        padding: 12px 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    
+    nav.nav .logo {
+        font-size: 28px;
+    }
+    
+    nav.nav ul {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav.nav ul li a {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav.nav {
+        padding: 10px 15px;
+    }
+    
+    nav.nav .logo {
+        font-size: 24px;
+    }
+    
+    nav.nav ul {
+        gap: 15px;
+    }
+    
+    nav.nav ul li a {
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+}
+
+
+#Contact {
+    background: rgb(175, 179, 228);
+    padding: 80px 20px;
+    min-height: auto;
+}
+
+.container {
+    max-width: 1090px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.left, .right {
+    flex: 1;
+    min-width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+#Contact .left {
+    background: white;
+    height: 450px;
+}
+
+#Contact .left img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
-h2{
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 2px 3px 4px hsl(214, 89%, 50%);
-}
-
-section img{
-    width: 50%;
-    height: 40%;
-    display: block;
-}
-
-#paragraph{
-    text-transform: capitalize;
-    font-weight: bold;
-}
-
-.nav{
-    top: 0;
-    position: fixed;
-    width: 100%;
-}
-
-#Contact img{
-    width: 100%;
-    height: auto;
-}
-
-.container{
+#Contact .right {
+    background: white;
+    padding: 40px 30px;
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
 }
 
-.left, .right{
-    flex: 1;
-    padding: 20px;
-    border: 1px solid black;
+.right h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 16px 18px;
+    border: 2px solid #e0e6ed;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: #fafbfc;
+    font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(135deg, #14745c, #3881ee);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.contact-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(20, 116, 92, 0.4);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 60px auto 0;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+    padding: 30px 25px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card h3 {
+    margin: 25px 0 15px;
+    color: #333;
+    font-size: 24px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+#Destination {
+    background: #f8f9fa;
+    padding: 100px 20px;
+}
+
+#Destination h2 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+#About {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 70px 50px;
+    border-radius: 30px;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.15);
+}
+
+.about-container h2 {
+    font-size: 42px;
+    margin-bottom: 35px;
+    color: #222;
+}
+
+.about-container p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    margin-top: 50px;
+}
+
+.social-icons a {
+    font-size: 32px;
+    margin: 0 20px;
+    color: black;
+    transition: all 0.4s ease;
+}
+
+
+.social-icons a:hover .fa-facebook {
+     color: blue;
+     }
+.social-icons a:hover .fa-instagram {
+     color: rgb(232, 83, 108); 
+    }
+.social-icons a:hover .fa-twitter {
+    color: rgb(83, 193, 230);
+ }
+.social-icons a:hover .fa-youtube { 
+    color:red; 
+}
+
+@media (max-width: 768px) {
+    .logo-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav ul {
+        gap: 25px;
+    }
+    
+    #Home h1 {
+        font-size: 48px;
+        padding: 0 20px;
+    }
+    
+    .container {
+        flex-direction: column;
+        gap: 25px;
+    }
+    
+    #Contact .left,
+    #Contact .right {
+        height: 350px;
+    }
+    
+    #Contact .right {
+        padding: 30px 25px;
+    }
 }
