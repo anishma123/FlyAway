@@ -22,10 +22,9 @@ section {
     background-position: center;
     min-height: 100vh;
     position: relative;
-
     display: flex;
-    justify-content: center;   
-    align-items: center;       
+     justify-content: center;    
+    align-items: center;        
 }
 
 #Home h1 {
@@ -37,35 +36,12 @@ section {
     max-width: 900px;
     line-height: 1.2;
 }
-nav.nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 12px 0;
-    z-index: 1000;
-}
 
-nav.nav .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 5%;
-    display: flex;
-    align-items: center;
-}
-
-.logo-section {
-    display: flex;
-    align-items: center;
-    gap: 60px; 
-}s
 .logo {
     color: rgb(175, 179, 228);
     font-size: 32px;
     font-weight: bold;
-    flex-shrink: 0;
+    
 }
 
 nav.nav {
@@ -75,20 +51,14 @@ nav.nav {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.95);
     padding: 15px 5%;
-    z-index: 1000;
+
+
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    box-shadow: 0 4px 25px rgba(0,0,0,0.3);
-    backdrop-filter: blur(15px);
 }
 
-nav.nav .logo {
-    font-size: 32px;
-    font-weight: bold;
-    color: rgb(175, 179, 228);
-    flex-shrink: 0;
-}
+
 
 nav.nav ul {
     list-style: none;
@@ -228,8 +198,8 @@ nav.nav ul li a:hover {
     width: 100%;
     padding: 16px 18px;
     border: 2px solid #e0e6ed;
-    border-radius: 12px;
-    font-size: 16px;
+    border-radius: 10px;
+    font-size: 15px;
     transition: all 0.3s ease;
     background: #fafbfc;
     font-family: inherit;
@@ -241,25 +211,20 @@ nav.nav ul li a:hover {
     outline: none;
     border-color: #4a90e2;
     background: white;
-    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
 }
 
-.contact-form textarea {
-    resize: vertical;
-    min-height: 100px;
-}
+
 
 .contact-form button {
     width: 100%;
     padding: 18px;
-    background: linear-gradient(135deg, #14745c, #3881ee);
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
     border: none;
     color: white;
     font-size: 18px;
     font-weight: bold;
-    border-radius: 12px;
+    border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s ease;
     margin-top: 10px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -341,7 +306,10 @@ nav.nav ul li a:hover {
 .about-container h2 {
     font-size: 42px;
     margin-bottom: 35px;
-    color: #222;
+    color: #333;
+    text-align: center;
+
+
 }
 
 .about-container p {
