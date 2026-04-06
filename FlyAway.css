@@ -24,7 +24,8 @@ section {
     position: relative;
     display: flex;
      justify-content: center;    
-    align-items: center;        
+    align-items: center;    
+    animation: bgChange 10s infinite;    
 }
 
 #Home h1 {
@@ -204,6 +205,10 @@ nav.nav ul li a:hover {
     background: #fafbfc;
     font-family: inherit;
 }
+.contact-form select{
+    height: 55px;
+    cursor: pointer;
+}
 
 .contact-form input:focus,
 .contact-form select:focus,
@@ -212,6 +217,7 @@ nav.nav ul li a:hover {
     border-color: #4a90e2;
     background: white;
 }
+
 
 
 
@@ -281,7 +287,7 @@ nav.nav ul li a:hover {
     padding: 100px 20px;
 }
 
-#Destination h2 {
+#Destination h1 {
     text-align: center;
     font-size: 42px;
     margin-bottom: 10px;
@@ -303,7 +309,7 @@ nav.nav ul li a:hover {
     box-shadow: 0 25px 70px rgba(0,0,0,0.15);
 }
 
-.about-container h2 {
+.about-container h1 {
     font-size: 42px;
     margin-bottom: 35px;
     color: #333;
