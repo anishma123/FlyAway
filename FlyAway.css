@@ -15,9 +15,8 @@ section {
 }
 
 
-#Home {
+/* #Home {
     padding-top: 120px;
-    background-image: url("background.jpeg");
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -27,6 +26,29 @@ section {
     align-items: center;    
     animation: bgChange 10s infinite;    
 }
+@keyframes bgChange {
+    0%   { background-image: url("background.jpeg"); }
+  20%  { background-image: url("bg1.jpeg"); }
+  40%  { background-image: url("bg2.jpeg"); }
+  60%  { background-image: url("bg3.jpeg"); }
+  80%  { background-image: url("bg4.jpeg"); }
+  100% { background-image: url("background.jpeg"); }
+
+    
+} */
+ #Home {
+    padding-top: 120px;
+    background-image: url("background.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 #Home h1 {
     font-size: 100px;
