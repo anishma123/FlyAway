@@ -28,16 +28,17 @@
     <section id="Contact">
       <div class="container">
         <section class="left">
-          <img src="./Contact.jpeg" />
+          <img src="./Contact.jpeg" alt="Contact Image"/>
         </section>
         <section class="right">
           <h2>Contact Us</h2>
 
           <form class="contact-form">
-            <input type="text" placeholder="Enter your Full Name" required />
-            <input type="email" placeholder="Enter your Email" required />
+            <input type="text"  name="fullname" placeholder="Enter your Full Name" required />
+            <input type="email" name="email" placeholder="Enter your Email" required />
             <input
               type="number"
+              name="number"
               placeholder="Enter your Phone Number"
               required
             />
@@ -61,6 +62,8 @@
             <input type="date" id="date" required />
 
             <textarea
+            name="message"
+            id="message"
               placeholder="Write your message..."
               rows="5"
               required
@@ -106,7 +109,7 @@
 
         <div class="card">
           <img src="./singapore.jpeg"  alt="singapore view" class="destination-img"/>
-          <h3>singapore</h3>
+          <h3>Singapore</h3>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
 
